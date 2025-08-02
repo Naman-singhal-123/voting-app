@@ -144,7 +144,7 @@ class thanks:
 class voting:
     def page(self,political_party):
         import mysql.connector as m
-        db = m.connect(host="localhost", user="root", password="ROOT", database="voting")
+        db = m.connect(host="localhost", user="sensative_information", password="sensative_information", database="voting")
         mycursor=db.cursor()
         pattern='%'+political_party[-1]
         query = f"UPDATE voting_count SET votes = votes + 1 WHERE party_name LIKE '{pattern}'"
@@ -515,7 +515,7 @@ class StudentRegistrationApp:
 
         def opens():
             import mysql.connector as m
-            db = m.connect(host="localhost", user="root", password="ROOT", database="voting")
+            db = m.connect(host="localhost", user="sensative_information", password="sensative_information", database="voting")
             mycursor=db.cursor()
             nam=self.name_entry.get()
             ag=self.age.get()
@@ -575,8 +575,8 @@ class page1():
 
   # Step 2: Send OTP to user's email
   def send_email(self,receiver_email, otp):
-        sender_email = "ghgffhvt@gmail.com"  # Your Gmail address
-        sender_password = "erdgevigmzaalifb"  # Your 16-digit app password (NO spaces)
+        sender_email = "sensative_information"  # Your Gmail address
+        sender_password = "sensative_information"  # Your 16-digit app password (NO spaces)
 
         subject = "Your OTP Code"
         body = f"Dear User,\n\nYour OTP is: {otp}\n\nThis OTP is valid for 5 minutes."
@@ -611,7 +611,7 @@ class page1():
 
   def login(self):
         import mysql.connector as m
-        db = m.connect(host="localhost", user="root", password="ROOT", database="voting")
+        db = m.connect(host="localhost", user="sensative_information", password="sensative_information", database="voting")
         mycursor = db.cursor()
         uname = self.adhar.get()
         pwd = self.password_name.get()
@@ -868,4 +868,5 @@ def open_registration_form():
 # -- START THE APP ---
 obj=page1()
 obj.show_login()
+
 
