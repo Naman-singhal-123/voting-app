@@ -1,3 +1,5 @@
+# please paste this and run python virtual enviroment like vs code , pycharm and another python application software
+# All the sensative_informations are hiding for Security purpose
 import tkinter as tk
 import webbrowser
 from tkinter import *
@@ -868,5 +870,6 @@ def open_registration_form():
 # -- START THE APP ---
 obj=page1()
 obj.show_login()
+
 
 
