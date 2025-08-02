@@ -30,6 +30,13 @@ A fully functional **Virtual Voting System** developed in **Python** using **Tki
 | smtplib     | Sending OTP via Email          |
 | random      | OTP Generation                 |
 
+
+## 🖼️ Screenshots
+
+### ✅ Login Page  
+![Login Page](https://github.com/Naman-singhal-123/voting-app/blob/main/voting%20images/login.png?raw=true)
+
+
 ---
 
 ## 🔄 App Flow
